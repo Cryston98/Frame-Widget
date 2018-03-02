@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+
+Author : Deaconu Adrian
+Date/Time : 05.08.2017 12:18
+Widget Name : Alien Navigation Menu
+
+-->
+
+<title>MeniuNavigare#1</title>
+<style>
+*{
+margin:0px;
+padding:0px;
+}
+.navbar{
+margin-left:100px;
+margin-top:30px;
+}
+.navbar ul{
+ list-style:none;
+}
+.navbar ul li{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    background-color: #333;
+    float: left;
+	position:relative;
+	
+
+}
+.navbar ul li:hover{
+    box-shadow: 2px 2px #ff0000;
+    background-color: #6b6b69;
+	
+}
+
+.navbar ul li a{
+text-decoration:none;
+color:#fff;
+}
+
+.navbar ul ul{
+display:none;
+}
+.navbar ul ul li{
+width:200px;
+}
+
+.navbar ul li:hover>ul{
+display:block;
+tansition:0.4px;
+}
+
+.navbar ul ul ul{
+position:absolute;
+margin-left:200px;
+top:-1px;
+}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+ <ul>
+   <li><a href="">Acasa</a></li>
+   <li><a href="">News</a>
+       <ul>
+            <li><a href="">News 1</a></li>
+            <li><a href="">News 2</a>
+			    <ul>
+			        <li><a href="">News 2.1</a></li>
+			        <li><a href="">News 2.2</a></li>
+			        <li><a href="">News 2.3</a></li>
+			    </ul>
+			  </li>
+            <li><a href="">News 3</a></li>
+       </ul>  
+     </li>
+   <li><a href="">Services</a>
+    <ul>
+            <li><a href="">Services 1</a></li>
+            <li><a href="">Services 2</a>
+			    <ul>
+			        <li><a href="">Services 2.1</a></li>
+			        <li><a href="">Services 2.2</a></li>
+			        <li><a href="">Services 2.3</a></li>
+			    </ul>
+			  </li>
+            <li><a href="">Services 3</a></li>
+       </ul>  
+   
+   </li>
+   <li><a href="">About</a></li>
+   <li><a href="">Contact</a></li>
+ </ul>
+</div>
+
+
+</body>
+</html>
