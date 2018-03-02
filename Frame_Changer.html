@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<!--
+
+#Author: Deaconu Adrian
+#Language: HTML,CSS,JavaScript
+#Widget Name: Frame Changer
+#Date/Time : 04.08.2017 23:04
+#USE: Free
+
+-->
+
+<title>Frame - Z0index</title>
+<style type="text/css">
+
+#serv1{
+width:670px;
+height:450px;
+position:fixed;
+}
+
+#serv2{
+width:670px;
+height:450px;
+position:fixed;
+}
+
+#serv3{
+width:670px;
+height:450px;
+position:fixed;
+}
+
+#video-server-load{
+width:670px;
+height:450px;
+border:1px solid #000;
+margin:0 auto; 
+}
+
+#nav{
+    width: 670px;
+    height: 40px;
+    box-shadow: 2px 2px #9a9a9a;
+    border: 1px solid #464444;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: #ffffff;
+}
+
+.btn{
+    width: 210px;
+    margin-left: 10px;
+    height: 30px;
+    font-weight: bold;
+    background-color: #313131;
+    border: 1px solid #000000;
+    box-shadow: 1px 1px #f00;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+	margin-top: 4px;
+}
+
+.btn:hover{
+    background-color: #313131;
+    border: 1px solid #000000;
+    box-shadow: 3px 3px #f00;
+    color: #f00;
+}
+
+</style>
+</head>
+<body>
+
+<script>
+function load(x){
+if(x==1){
+  document.getElementById("serv1").style.zIndex = "1";
+  document.getElementById("serv2").style.zIndex = "-1";
+  document.getElementById("serv3").style.zIndex = "-1";
+}
+else if(x==2){
+  document.getElementById("serv1").style.zIndex = "-1";
+  document.getElementById("serv2").style.zIndex = "1";
+  document.getElementById("serv3").style.zIndex = "-1";
+}else{
+  document.getElementById("serv1").style.zIndex = "-1";
+  document.getElementById("serv2").style.zIndex = "-1";
+  document.getElementById("serv3").style.zIndex = "1";
+  }
+}
+  
+</script>
+
+<div id="cont">
+<div id="video-server-load">
+   <iframe id="serv1"  alt="URL address is not disponible" src="YourURL-Server1" height="100%" width="100%" frameborder="0" ></iframe>
+   <iframe id="serv2"  alt="URL address is not disponible" src="YourURL-Server2" height="100%" width="100%" frameborder="0" ></iframe>
+   <iframe id="serv3"  alt="URL address is not disponible" src="YourURL-Server3" height="100%" width="100%" frameborder="0"></iframe>
+   
+</div>
+
+<div id="nav">
+<button onclick="load(1)" class="btn">Server1</button >
+<button onclick="load(2)" class="btn">Server2</button >
+<button onclick="load(3)" class="btn">Server3</button >
+</div>
+</div>
+
+</body>
+ </html>
+
+
+
+
